@@ -26,6 +26,17 @@ df
 
 • `pd.read_csv()` - reads the csv files uploaded to make it the DataFrame.
 
+**Required DataFrame:**
+
+• `Average` - in order to complete the required columns from the dataset. Make another DataFrame code to calculate the mean of Math, Electronics, GEAS and Communication
+
+• New DataFrame with Average Column: To assign or insert the new Average column, this code was utilized:
+
+                                 `python
+                                  df = df.assign(Average=Average)
+                                  df
+                                  `
+                                  
 # **A. VISAYAS COMMUNICATION DATAFRAME**
 Create a DataFrame named VisComm containing students whose Hometown is Visayas and whose Track
 is Communication. Retain only these columns, in the stated order:
@@ -35,14 +46,28 @@ is Communication. Retain only these columns, in the stated order:
 ```
 
 # **B. VISAYAS FEMALE DATAFRAME**
+Create a second DataFrame named VisFemale containing students whose Hometown is Visayas and
+whose Gender is Female. Retain only:
+
+```python
+                                        Name, Track, GEAS, Electronics, Average
+```
 
 # **C. CATEGORY-AVERAGE VISUALIZATION**
 
    ***c.1. For each feature, compute the mean of Average for every category using Pandas.***
+
+   
    ***c.2. Display the three summary tables.***
+
+   
    ***c.3. Create one figure containing three bar charts: mean Average by Track, by Gender, and by
 Hometown.***
+
+
    ***c.4. Below the figure, write three concise statements identifying the category with the highest sample mean for each feature.***
+
+   
 
 
 ***Thank you for reading!***
