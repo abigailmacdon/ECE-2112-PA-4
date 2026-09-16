@@ -5,11 +5,11 @@ This repository contains the content of the *Programming Assignment 2* for the c
 
 It includes three Python problems based on **Module 3 - Pandas** which are the following:
 
-  **A. POSITIONAL AND LABEL-BASED SLICING**
+  **A. VISAYAS COMMUNICATION DATAFRAME**
  
-  **B. MODEL LOOKUP**
+  **B. VISAYAS FEMALE DATAFRAME**
 
-  **C. MULTI-MODEL SUBSETTING**
+  **C. CATEGORY-AVERAGE VISUALIZATION**
 
   Using the given CSV file named "cars" to load and create a DataFrame. Here is the link for the "cars.csv": https://github.com/abigailmacdon/ECE-2112-PA-3/blob/main/cars.csv.
 
@@ -18,20 +18,31 @@ To load the file this code is needed:
 ```python
 import pandas as pd
 
-cars = pd.read_csv('cars.csv')
-cars
+df = pd.read_csv('board2.csv') 
+df
 ```
 
 • `import pandas as pd` - This imports the Pandas library and uses "pd" as a shorter term when coding.
 
 • `pd.read_csv()` - reads the csv files uploaded to make it the DataFrame.
 
-# **A. POSITIONAL AND LABEL-BASED SLICING**
+# **A. VISAYAS COMMUNICATION DATAFRAME**
+Create a DataFrame named VisComm containing students whose Hometown is Visayas and whose Track
+is Communication. Retain only these columns, in the stated order:
 
-# **A. POSITIONAL AND LABEL-BASED SLICING**
+```python
+                            Name, Gender, Math, Electronics, Average
+```
 
-# **A. POSITIONAL AND LABEL-BASED SLICING**
+# **B. VISAYAS FEMALE DATAFRAME**
 
+# **C. CATEGORY-AVERAGE VISUALIZATION**
+
+   ***c.1. For each feature, compute the mean of Average for every category using Pandas.***
+   ***c.2. Display the three summary tables.***
+   ***c.3. Create one figure containing three bar charts: mean Average by Track, by Gender, and by
+Hometown.***
+   ***c.4. Below the figure, write three concise statements identifying the category with the highest sample mean for each feature.***
 
 
 ***Thank you for reading!***
@@ -40,5 +51,5 @@ To see the detailed and main python program for Program Assignment 3, please cli
 
 **README file Version History:**
 
-September 5, 2026
+September 16, 2026
   - Initial README draft.
