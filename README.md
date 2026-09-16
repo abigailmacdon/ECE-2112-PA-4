@@ -31,7 +31,7 @@ Create a DataFrame named VisComm containing students whose Hometown is Visayas a
 is Communication. Retain only these columns, in the stated order:
 
 ```python
-                            Name, Gender, Math, Electronics, Average
+                                        Name, Gender, Math, Electronics, Average
 ```
 
 # **B. VISAYAS FEMALE DATAFRAME**
