@@ -44,6 +44,10 @@ is Communication. Retain only these columns, in the stated order:
 ```python
                                         Name, Gender, Math, Electronics, Average
 ```
+• `Hometown == Visayas` - In order to only filter or show the data from students whose Hometown is Visayas.
+• `Track == Comunication` - Set in order to show students that studies the Communication Track.
+• `&` - 
+
 
 # **B. VISAYAS FEMALE DATAFRAME**
 Create a second DataFrame named VisFemale containing students whose Hometown is Visayas and
