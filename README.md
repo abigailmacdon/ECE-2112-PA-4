@@ -30,12 +30,12 @@ df
 
 • `Average` - in order to complete the required columns from the dataset. Make another DataFrame code to calculate the mean of Math, Electronics, GEAS and Communication
 
-• New DataFrame with Average Column: To assign or insert the new Average column, this code was utilized:
+• **New DataFrame with Average Column**: To assign or insert the new Average column, this code was utilized:
 
-                                 ```python
-                                  df = df.assign(Average=Average)
-                                  df
-                                  ```
+ ```python
+ df = df.assign(Average=Average)
+ df
+ ```
                                   
 # **A. VISAYAS COMMUNICATION DATAFRAME**
 Create a DataFrame named VisComm containing students whose Hometown is Visayas and whose Track
