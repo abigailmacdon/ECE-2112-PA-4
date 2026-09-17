@@ -45,6 +45,13 @@ is Communication. Retain only these columns, in the stated order:
                                         Name, Gender, Math, Electronics, Average
 ```
 
+CODE:
+
+```python
+VisComm = df[(df["Hometown"] == "Visayas") & (df["Track"] == "Communication")][["Name", "Gender", "Math", "Electronics", "Average"]] #Only shows the students whose Hometown is Visayas AND whose Track is Communication, then selects only required colummns.
+VisComm #Displays the VisComm DataFrame.
+```
+
 • `Hometown == Visayas` - In order to only filter or show the data from students whose Hometown is Visayas.
 
 • `Track == Communication` - Set in order to show students that studies the Communication Track.
@@ -69,6 +76,12 @@ whose Gender is Female. Retain only:
 ```python
                                         Name, Track, GEAS, Electronics, Average
 ```
+Code:
+
+```python
+VisFemale = df[(df["Hometown"] == "Visayas") & (df["Gender"] == "Female")][["Name", "Track", "GEAS", "Electronics", "Average"]] #Only shows the students whose Hometown is Visayas AND whose Track is Communication, then selects only required colummns.
+display(VisFemale) #Displays the VisComm DataFrame.
+```
 
 • `Hometown == Visayas` - In order to only filter or show the data from students whose Hometown is Visayas.
 
@@ -91,15 +104,42 @@ whose Gender is Female. Retain only:
 
    ***c.1. For each feature, compute the mean of Average for every category using Pandas.***
 
+FOR COMMUNICATION MEAN CODE:
+
+```python
+Communication = df[df['Track'] == 'Communication']['Average'].mean() 
+print('Communication:', Communication) 
+Instrumentation = df[df['Track'] == 'Instrumentation']['Average'].mean() 
+print('Instrumentation:', Instrumentation) 
+Microelectronics = df[df['Track'] == 'Microelectronics']['Average'].mean() 
+print('Microelectronics :', Microelectronics)
+```
+
 • `Communication` - Stores the mean Average of students under the Communication Track.
 
 • `Instrumentation` - Stores the mean Average of students under the Instrumentation Track.
 
 • `Microelectronics` - Stores the mean Average of students under the Microelectronics Track.4
 
+```python
+Female = df[df['Gender'] == 'Female']['Average'].mean() 
+print('Female:', Female) 
+Male = df[df['Gender'] == 'Male']['Average'].mean()
+print('Male:', Male) 
+```
+
 • `Female` - Stores the mean Average of female students.
 
 • `Male` - Stores the mean Average of male students.
+
+```python
+Luzon = df[df['Hometown'] == 'Luzon']['Average'].mean() 
+print('Luzon:', Luzon) 
+Visayas = df[df['Hometown'] == 'Visayas']['Average'].mean()
+print('Visayas:', Visayas) 
+Mindanao = df[df['Hometown'] == 'Mindanao']['Average'].mean() 
+print('Mindanao:', Mindanao)
+```
 
 • `Luzon` - Stores the mean Average of students from Luzon.
 
