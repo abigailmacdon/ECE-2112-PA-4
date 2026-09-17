@@ -200,3 +200,6 @@ To see the detailed and main python program for Program Assignment 4, please cli
 
 September 16, 2026
   - Initial README draft.
+
+September 17, 2026
+  - Finalization of README file.
