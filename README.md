@@ -32,10 +32,10 @@ df
 
 • New DataFrame with Average Column: To assign or insert the new Average column, this code was utilized:
 
-                                 `python
+                                 ```python
                                   df = df.assign(Average=Average)
                                   df
-                                  `
+                                  ```
                                   
 # **A. VISAYAS COMMUNICATION DATAFRAME**
 Create a DataFrame named VisComm containing students whose Hometown is Visayas and whose Track
